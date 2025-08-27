@@ -47,17 +47,16 @@ export default function HoverExpand({
       <div className="mx-auto flex w-fit gap-1 rounded-md md:gap-2">
         {images.slice(0, maxThumbnails).map((imageUrl, i) => (
           <div
-  key={`image-container-${i}`}
-  className={`group relative h-[19.5rem] overflow-hidden rounded-2xl transition-all duration-300 ${
-    selectedIndex === i ? "w-[33rem]" : "w-6 sm:w-7 md:w-36 xl:w-54"
-  }`}
-  onMouseEnter={() => setSelectedIndex(i)}
-  onMouseLeave={() => setSelectedIndex(i)}
-  onClick={() => {
-    setSelectedIndex(i)
-    setIsModalOpen(true)
-  }}
->
+            key={`image-container-${i}`}
+            className={`group relative h-[19.5rem] overflow-hidden rounded-2xl transition-all duration-300 ${selectedIndex === i ? "w-[33rem]" : "w-6 sm:w-7 md:w-36 xl:w-54"
+              }`}
+            onMouseEnter={() => setSelectedIndex(i)}
+            onMouseLeave={() => setSelectedIndex(i)}
+            onClick={() => {
+              setSelectedIndex(i)
+              setIsModalOpen(true)
+            }}
+          >
 
 
             <motion.div

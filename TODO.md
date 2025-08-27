@@ -1,14 +1,18 @@
-# Fix MinimalCardImage Invalid URL Error
+# Single Page Consolidation Plan
 
 ## Steps to Complete:
-- [x] Analyze the error and understand the issue
-- [x] Examine the MinimalCardImage component and usage
-- [x] Create a plan for the fix
-- [ ] Modify MinimalCardImage component to handle relative paths
-- [ ] Test the fix by running development server
-- [ ] Verify images load correctly
 
-## Issue Details:
-- Error: "Failed to construct 'URL': Invalid URL" in MinimalCardImage component
-- Cause: Next.js Image component expects absolute paths for public directory images
-- Solution: Modify component to convert relative paths to absolute paths
+1. [ ] Create AboutSection component in my_components folder
+2. [ ] Create ServicesSection component in my_components folder  
+3. [ ] Create TestimonialsSection component in my_components folder
+4. [ ] Create ContactSection component in my_components folder
+5. [ ] Move HoverExpandComponent to my_components folder
+6. [ ] Update Navbar for single-page navigation with smooth scroll
+7. [ ] Update main page.tsx to include all sections
+8. [ ] Remove individual page files
+9. [ ] Test smooth scroll functionality
+10. [ ] Verify responsive design
+
+## Current Progress:
+- Plan created and approved
+- Smooth scroll requirement noted
