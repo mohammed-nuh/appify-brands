@@ -19,3 +19,7 @@
     animation: gradient-move 6s ease infinite;
   }
 }
+
+html {
+  scroll-behavior: smooth;
+}

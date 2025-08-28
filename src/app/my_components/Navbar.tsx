@@ -6,9 +6,9 @@ import { ExpandedTabs } from "@/components/ui/expanded-tabs";
 
 const tabs = [
   { title: "Home", icon: Home, href: "#main" },
-  { title: "About Us", icon: Info, href: "#about" },
   { title: "Services", icon: Briefcase, href: "#services" },
   { title: "Testimonials", icon: MessageSquare, href: "#testimonials" },
+  { title: "About Us", icon: Info, href: "#about" },
   { title: "Contact", icon: Phone, href: "#contact" },
 ];
 
