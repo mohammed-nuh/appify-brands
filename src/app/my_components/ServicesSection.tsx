@@ -4,7 +4,8 @@ import { Globe } from "lucide-react";
 
 export default function ServicesSection() {
   return (
-    <section id="services" className="p-6 py-16 bg-white-500 dark:bg-black-900">
+    <section id="services" className="flex flex-col items-center justify-center text-center min-h-screen">
+      <div className='scale-[1.4]'>
         <HoverExpandComponent />
         <div className="w-full flex flex-col items-center justify-center">
           <WrapButton className="mt-5" href="/services" variant='green'>
@@ -12,6 +13,7 @@ export default function ServicesSection() {
             View Our Services
           </WrapButton>
         </div>
+      </div>
     </section>
   )
 }

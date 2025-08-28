@@ -36,7 +36,7 @@ export default function Home() {
         id="main"
         className="flex flex-col items-center justify-center text-center min-h-screen"
       >
-        <div className="scale-[1.2] transform origin-center">
+        <div className="transform origin-center scale-[1.4]">
           <h1
             className="flex items-center justify-center gap-3 text-4xl sm:text-5xl font-extrabold py-4
       bg-gradient-to-r from-blue-400 via-blue-500 to-blue-700 
