@@ -1,19 +1,21 @@
+import { CardCarousel } from "@/components/ui/card-carousel";
+
 export default function TestimonialsSection() {
+  const images = [
+    { src: "/testimonials/1.png", alt: "Image 1" },
+    { src: "/testimonials/2.png", alt: "Image 2" },
+    { src: "/testimonials/3.png", alt: "Image 3" },
+  ]
   return (
-    <section id="testimonials" className="max-w-3xl mx-auto p-6 py-16">
-      <h1 className="text-3xl font-bold mb-4">Client Testimonials</h1>
-      <p className="mb-4">
-        Don&apos;t just take our word for it — hear what our clients have to say about
-        working with <span className="font-semibold">AppifyBrands</span>. We&apos;re proud
-        to have helped businesses across various industries achieve their digital goals
-        and exceed their expectations.
-      </p>
-      <p>
-        From startups to established enterprises, our clients consistently praise our
-        attention to detail, technical expertise, and commitment to delivering
-        exceptional results. Their success stories inspire us to continue pushing
-        the boundaries of web development.
-      </p>
+    <section id="testimonials" className="flex flex-col items-center justify-center text-center min-h-screen">
+      <div className="scale-[1.2]">
+        <CardCarousel
+          images={images}
+          autoplayDelay={2000}
+          showPagination={true}
+          showNavigation={true}
+        />
+      </div>
     </section>
   );
 }

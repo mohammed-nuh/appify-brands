@@ -1,18 +1,21 @@
-# Single Page Consolidation Plan
+# Card Carousel Dark Mode Optimization
 
-## Steps to Complete:
+## Tasks Completed:
+- [x] Analyze current card-carousel implementation
+- [x] Update border colors for dark mode compatibility
+- [x] Update background colors for dark mode
+- [x] Add dark mode styles for pagination bullets
+- [x] Update text colors for dark mode
+- [ ] Test component in both light and dark modes
+- [ ] Verify border visibility improvements
 
-1. [ ] Create AboutSection component in my_components folder
-2. [ ] Create ServicesSection component in my_components folder  
-3. [ ] Create TestimonialsSection component in my_components folder
-4. [ ] Create ContactSection component in my_components folder
-5. [ ] Move HoverExpandComponent to my_components folder
-6. [ ] Update Navbar for single-page navigation with smooth scroll
-7. [ ] Update main page.tsx to include all sections
-8. [ ] Remove individual page files
-9. [ ] Test smooth scroll functionality
-10. [ ] Verify responsive design
+## Changes Made:
+1. ✅ Replaced `border-black/5` with `dark:border-white/10` for main container borders
+2. ✅ Replaced `border-black/5` with `dark:border-white/10` for inner container borders  
+3. ✅ Updated `bg-neutral-800/5` to `dark:bg-neutral-900/20` for better dark mode contrast
+4. ✅ Added `text-black dark:text-white` for text color consistency
+5. ✅ Added dark mode styles for swiper pagination bullets
+6. ✅ Added individual slide borders with `border-black/10 dark:border-white/15`
 
-## Current Progress:
-- Plan created and approved
-- Smooth scroll requirement noted
+## Current Status:
+Dark mode optimization completed. Ready for testing.
