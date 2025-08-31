@@ -1,22 +1,25 @@
 "use client"
 
 import { useState } from "react"
+import PortfolioDetail from "../my_components/PortfolioDetail"
+import AgencyDetail from "../my_components/AgencyDetail"
+import LMSDetail from "../my_components/LMSDetail"
 
 const options = [
   {
     title: "Portfolio Website",
     src: "hover_images/1.jpg",
-    component: () => <p className="mt-6">This is Portfolio Website details...</p>,
+    component: () => <PortfolioDetail />,
   },
   {
     title: "Agency Website",
     src: "hover_images/2.jpg",
-    component: () => <p className="mt-6">This is Agency Website details...</p>,
+    component: () => <AgencyDetail />,
   },
   {
     title: "LMS Website",
     src: "hover_images/3.jpg",
-    component: () => <p className="mt-6">This is LMS Website details...</p>,
+    component: () => <LMSDetail />,
   },
 ]
 
@@ -24,8 +27,8 @@ export default function WebsitesPage() {
   const [activeIndex, setActiveIndex] = useState<number | null>(null)
 
   return (
-    <section className="p-6 py-16 bg-white-500 dark:bg-black-900">
-      <h1 className="text-3xl font-bold text-center mb-8 text-black-900 dark:text-white-500">
+    <section className="p-6 py-16 bg-white dark:bg-black">
+      <h1 className="text-3xl font-bold text-center mb-8 text-black dark:text-white">
         Choose Your Website
       </h1>
 
@@ -57,11 +60,11 @@ export default function WebsitesPage() {
       {/* Selected Component */}
       <div className="mt-10 text-center">
         {activeIndex !== null ? (
-          <div className="text-black-900 dark:text-white-500">
+          <div className="text-black dark:text-white">
             {options[activeIndex].component()}
           </div>
         ) : (
-          <p className="text-black-900 dark:text-white-500">
+          <p className="text-black dark:text-white">
             Click on a website type to see details...
           </p>
         )}
