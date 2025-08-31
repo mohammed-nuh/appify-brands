@@ -80,17 +80,7 @@ export const CardCarousel: React.FC<CarouselProps> = ({
       <style>{css}</style>
       <div className="mx-auto w-full max-w-4xl rounded-[24px] border border-black/5 dark:border-white/10 p-2 shadow-sm md:rounded-t-[44px]">
         <div className="relative mx-auto flex w-full flex-col rounded-[24px] border border-black/5 dark:border-white/10 bg-neutral-800/5 dark:bg-neutral-900/20 p-2 shadow-sm md:items-start md:gap-8 md:rounded-b-[20px] md:rounded-t-[40px] md:p-2">
-          <div className="flex flex-col justify-center pb-2 pl-4 pt-14 md:items-center">
-            <div className="flex gap-2">
-              <div>
-                <h3 className="text-4xl opacity-85 font-bold tracking-tight text-black dark:text-white">
-                  Clients Testimonials
-                </h3>
-              </div>
-            </div>
-          </div>
-
-          <div className="flex w-full items-center justify-center gap-4">
+          <div className="flex w-full items-center justify-center gap-4 pt-5">
             <div className="w-full">
               <Swiper
                 spaceBetween={50}

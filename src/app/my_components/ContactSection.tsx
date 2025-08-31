@@ -3,7 +3,14 @@ import FlipLink from "@/components/ui/text-effect-flipper";
 export default function ContactSection() {
   return (
     <section id="contact" className="flex flex-col items-center justify-center text-center min-h-screen">
-      <div className="flex flex-col items-center gap-6">
+      <h1
+        className="text-6xl md:text-7xl font-extrabold mb-8 tracking-tight
+        bg-gradient-to-r from-green-400 via-green-500 to-emerald-600
+        bg-clip-text text-transparent"
+      >
+        Contact
+      </h1>
+      <div className="flex flex-col items-center gap-6 scale-[1]">
         <FlipLink 
           href="mailto:your-email@gmail.com" 
           icon={

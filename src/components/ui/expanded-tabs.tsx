@@ -1,17 +1,16 @@
 "use client"
 
 import * as React from "react"
-import { AnimatePresence, motion } from "framer-motion"
+import { AnimatePresence, motion, Transition } from "framer-motion"
 import { LucideIcon } from "lucide-react"
 import { useOnClickOutside } from "usehooks-ts"
 import Link from "next/link"
-
 import { cn } from "@/lib/utils"
 
 interface Tab {
   title: string
   icon: LucideIcon
-  href: string   // ✅ added href
+  href: string
   type?: never
 }
 
@@ -50,8 +49,8 @@ const spanVariants = {
   exit: { width: 0, opacity: 0 },
 }
 
-const transition: { delay: number; type: "spring"; bounce: number; duration: number } = {
-  delay: 0.1,
+// ✅ strongly typed spring transition
+const spring: Transition = {
   type: "spring",
   bounce: 0,
   duration: 0.6,
@@ -84,13 +83,13 @@ export function ExpandedTabs({
 
   return (
     <div
-  ref={outsideClickRef}
-  className={cn(
-    "flex gap-2 rounded-2xl border bg-neutral-800/90 backdrop-blur-md p-1 shadow-lg",
-    "dark:bg-neutral-900/80", // ✅ slightly darker in dark mode
-    className
-  )}
->
+      ref={outsideClickRef}
+      className={cn(
+        "flex gap-2 rounded-2xl border backdrop-blur-md p-1 shadow-lg",
+        "bg-white/80 dark:bg-neutral-900/80 border-gray-200 dark:border-neutral-800",
+        className
+      )}
+    >
       {tabs.map((tab, index) => {
         if (tab.type === "separator") {
           return <Separator key={`separator-${index}`} />
@@ -105,7 +104,7 @@ export function ExpandedTabs({
               animate="animate"
               custom={selected === index}
               onClick={() => handleSelect(index)}
-              transition={transition}
+              transition={spring}
               className={cn(
                 "relative flex items-center rounded-xl px-4 py-2 text-sm font-medium transition-colors duration-200",
                 selected === index
@@ -121,8 +120,8 @@ export function ExpandedTabs({
                     initial="initial"
                     animate="animate"
                     exit="exit"
-                    transition={transition}
-                    className="overflow-hidden"
+                    transition={spring}
+                    className="overflow-hidden whitespace-nowrap"
                   >
                     {tab.title}
                   </motion.span>

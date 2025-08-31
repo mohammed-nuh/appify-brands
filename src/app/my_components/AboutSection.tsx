@@ -1,42 +1,28 @@
 export default function AboutSection() {
   return (
-    <section id="about" className="flex flex-col items-center justify-center text-center min-h-screen">
-      <h1 className="text-3xl font-bold mb-12 text-center">About Us</h1>
+    <section
+      id="about"
+      className="flex flex-col items-center justify-center text-center min-h-screen px-6 py-20"
+    >
+      <h1
+        className="text-5xl md:text-6xl font-extrabold mb-8 tracking-tight
+        bg-gradient-to-r from-green-400 via-green-500 to-emerald-600
+        bg-clip-text text-transparent"
+      >
+        About Us
+      </h1>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 items-center gap-8">
-        {/* Left Image */}
-        <div className="flex justify-center">
-          <img
-            src="/nuh.jpg" // replace with your image path
-            alt="Nuh"
-            className="w-40 h-40 object-cover rounded-2xl shadow-lg"
-          />
-        </div>
-
-        {/* Center Text */}
-        <div className="text-center md:text-left">
-          <p className="mb-4">
-            Welcome to <span className="font-semibold">AppifyBrands</span>, a
-            creative agency founded by two passionate React developers,{" "}
-            <span className="font-semibold">Nuh</span> and{" "}
-            <span className="font-semibold">Ibrahim</span>.
-          </p>
-          <p>
-            We specialize in crafting beautiful, functional, and high-performance
-            websites for businesses of all sizes. Our mission is simple: deliver
-            modern, user-friendly web experiences that help brands stand out.
-          </p>
-        </div>
-
-        {/* Right Image */}
-        <div className="flex justify-center">
-          <img
-            src="/ibrahim.jpg" // replace with your image path
-            alt="Ibrahim"
-            className="w-40 h-40 object-cover rounded-2xl shadow-lg"
-          />
-        </div>
-      </div>
+      <p className="max-w-3xl text-xl md:text-2xl font-medium leading-relaxed text-muted-foreground">
+        We specialize in building modern frontend websites using{" "}
+        <span className="font-bold text-foreground">React</span> and{" "}
+        <span className="font-bold text-foreground">Next.js</span>.  
+        Our projects are styled with{" "}
+        <span className="font-bold text-foreground">Tailwind CSS</span> and enhanced
+        with powerful UI libraries like{" "}
+        <span className="font-bold text-foreground">shadcn/ui</span> and{" "}
+        <span className="font-bold text-foreground">Skiper UI</span>, ensuring
+        beautiful, responsive, and user-friendly digital experiences.
+      </p>
     </section>
-  );
+  )
 }

@@ -8,7 +8,14 @@ export default function TestimonialsSection() {
   ]
   return (
     <section id="testimonials" className="flex flex-col items-center justify-center text-center min-h-screen">
-      <div className="scale-[1.2]">
+      <div className="">
+        <h1
+        className="text-5xl font-extrabold mb-6 mt-9
+        bg-gradient-to-r from-green-400 via-green-500 to-emerald-600
+        bg-clip-text text-transparent animate-gradient"
+      >
+        What Our Clients Think?
+      </h1>
         <CardCarousel
           images={images}
           autoplayDelay={2000}
