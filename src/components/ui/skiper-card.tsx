@@ -91,7 +91,7 @@ function FeatureCard({
           bgClass
         )}
       >
-        <div className="m-10 min-h-[550px] w-full">
+        <div className="m-10 min-h-[700px] w-full">
           <div className="flex w-4/6 flex-col gap-3">
             <h2 className="text-xl font-bold tracking-tight text-white md:text-2xl">
               {title}
@@ -127,7 +127,7 @@ export function SkiperCard({
       <div
         className={cn(
           { "translate-x-0 opacity-0": step < 3 },
-          "absolute left-2/4 top-1/3 flex w-full -translate-x-1/2 -translate-y-[33%] flex-col gap-12 text-center text-2xl font-bold transition-all duration-500 md:w-3/5"
+          "absolute left-2/4 top-1/5 flex w-full -translate-x-1/2 -translate-y-[33%] flex-col gap-12 text-center text-2xl font-bold transition-all duration-500 md:w-3/5"
         )}
       >
         <Image
@@ -135,70 +135,77 @@ export function SkiperCard({
           src={image.step4light}
           width={800}
           height={500}
-          className="pointer-events-none top-1/2 w-[90%] rounded-2xl border border-neutral-100/10 transition-all duration-500 dark:border-zinc-700 md:left-[35px] md:top-[30%] md:w-full"
+        className="pointer-events-none top-[0%] w-[90%] rounded-2xl transition-all duration-500 md:left-[35px] md:top-[2%] md:w-full"
           style={{ position: "absolute", userSelect: "none", maxWidth: "unset" }}
         />
       </div>
 
       {/* step 1 */}
-      <Image
-        alt={image.alt}
-        src={image.step1light1}
-        width={400}
-        height={300}
-        className={cn(step1img1Class, {
-          "-translate-x-36 opacity-0 rounded-2xl": step > 0,
-        })}
-        style={{ position: "absolute", userSelect: "none", maxWidth: "unset" }}
-      />
-      <Image
-        alt={image.alt}
-        src={image.step1light2}
-        width={400}
-        height={300}
-        className={cn(step1img2Class, {
-          "-translate-x-24 opacity-0 rounded-2xl": step > 0,
-        })}
-        style={{ position: "absolute", userSelect: "none", maxWidth: "unset" }}
-      />
+      <div
+        className={cn(
+          { "translate-x-0 opacity-0": step !== 0 },
+          "absolute left-2/4 top-1/5 flex w-full -translate-x-1/2 -translate-y-[33%] flex-col gap-12 text-center text-2xl font-bold transition-all duration-500 md:w-3/5"
+        )}
+      >
+        <Image
+          alt={image.alt}
+          src={image.step1light1}
+          width={400}
+          height={300}
+          className={cn(step1img1Class, "pointer-events-none top-[5%] w-[90%] rounded-2xl transition-all duration-500 md:left-[35px] md:top-[2%] md:w-full")}
+          style={{ position: "absolute", userSelect: "none", maxWidth: "unset" }}
+        />
+        <Image
+          alt={image.alt}
+          src={image.step1light2}
+          width={400}
+          height={300}
+          className={cn(step1img2Class, "pointer-events-none top-[5%] w-[90%] rounded-2xl transition-all duration-500 md:left-[35px] md:top-[2%] md:w-full")}
+          style={{ position: "absolute", userSelect: "none", maxWidth: "unset" }}
+        />
+      </div>
 
       {/* step 2 */}
-      <Image
-        alt={image.alt}
-        src={image.step2light1}
-        width={400}
-        height={300}
-        className={cn(step2img1Class, "rounded-2xl", {
-          "translate-x-36 opacity-0": step < 1,
-          "-translate-x-36 opacity-0": step > 1,
-        })}
-        style={{ position: "absolute", userSelect: "none", maxWidth: "unset" }}
-      />
-      <Image
-        alt={image.alt}
-        src={image.step2light2}
-        width={400}
-        height={300}
-        className={cn(step2img2Class, "rounded-2xl", {
-          "translate-x-24 opacity-0": step < 1,
-          "-translate-x-24 opacity-0": step > 1,
-        })}
-        style={{ position: "absolute", userSelect: "none", maxWidth: "unset" }}
-      />
+      <div
+        className={cn(
+          { "translate-x-0 opacity-0": step !== 1 },
+          "absolute left-2/4 top-1/5 flex w-full -translate-x-1/2 -translate-y-[33%] flex-col gap-12 text-center text-2xl font-bold transition-all duration-500 md:w-3/5"
+        )}
+      >
+        <Image
+          alt={image.alt}
+          src={image.step2light1}
+          width={400}
+          height={300}
+          className={cn(step2img1Class, "pointer-events-none top-[5%] w-[90%] rounded-2xl transition-all duration-500 md:left-[35px] md:top-[2%] md:w-full")}
+          style={{ position: "absolute", userSelect: "none", maxWidth: "unset" }}
+        />
+        <Image
+          alt={image.alt}
+          src={image.step2light2}
+          width={400}
+          height={300}
+          className={cn(step2img2Class, "pointer-events-none top-[5%] w-[90%] rounded-2xl transition-all duration-500 md:left-[35px] md:top-[2%] md:w-full")}
+          style={{ position: "absolute", userSelect: "none", maxWidth: "unset" }}
+        />
+      </div>
 
       {/* step 3 */}
-      <Image
-        alt={image.alt}
-        src={image.step3light}
-        width={400}
-        height={300}
-        className={cn(step3imgClass, "rounded-2xl", {
-          "translate-x-36 opacity-0": step < 2,
-          "-translate-x-36 opacity-0": step > 2,
-          "opacity-90": step === 2,
-        })}
-        style={{ position: "absolute", userSelect: "none", maxWidth: "unset" }}
-      />
+      <div
+        className={cn(
+          { "translate-x-0 opacity-0": step !== 2 },
+          "absolute left-2/4 top-1/5 flex w-full -translate-x-1/2 -translate-y-[33%] flex-col gap-12 text-center text-2xl font-bold transition-all duration-500 md:w-3/5"
+        )}
+      >
+        <Image
+          alt={image.alt}
+          src={image.step3light}
+          width={400}
+          height={300}
+          className={cn(step3imgClass, "pointer-events-none top-[5%] w-[90%] rounded-2xl transition-all duration-500 md:left-[35px] md:top-[2%] md:w-full")}
+          style={{ position: "absolute", userSelect: "none", maxWidth: "unset" }}
+        />
+      </div>
 
       {/* Steps navigation */}
       <div className="absolute left-48 top-5 z-50 size-full cursor-pointer md:left-0">
@@ -272,7 +279,7 @@ interface StepsProps {
 
 export function Steps({ steps, current, onChange }: StepsProps) {
   return (
-    <nav aria-label="Progress" className="flex justify-center px-4 ">
+    <nav aria-label="Progress" className="flex justify-center px-4">
       <ol className="flex w-full flex-wrap items-start justify-start gap-2 sm:justify-center md:w-10/12" role="list">
         {steps.map((step, stepIdx) => {
           const isCompleted = current > stepIdx

@@ -128,34 +128,29 @@ export default function ServicesPage() {
             </div>
 
             {/* Why Choose Us */}
-            {/* Why Choose Us */}
             <div className="mt-20 text-center">
                 <h2 className="text-2xl font-bold mb-8 text-gray-900 dark:text-white">
                     Why Choose Us?
                 </h2>
-<SkiperCard
-  title="Why Choose Us?"
-  description="🚀 Fast · 🎨 Modern · 💰 Affordable · 🔒 Hosting · 🤝 Support"
-  image={{
-    step1light1: "/assets/feature-1.png",
-    step1light2: "/assets/feature-2.png",
-    step2light1: "/assets/feature-3.png",
-    step2light2: "/assets/feature-4.jpg",
-    step3light: "/assets/texture-card.png",
-    step4light: "/assets/skiper.png",
-    // dark versions (reuse light if no dark available)
-    step1dark1: "/assets/feature-1.png",
-    step1dark2: "/assets/feature-2.png",
-    step2dark1: "/assets/feature-3.png",
-    step2dark2: "/assets/feature-4.jpg",
-    step3dark: "/assets/texture-card.png",
-    alt: "Why choose us preview",
-  }}
-/>
-
-
-
-
+                <SkiperCard
+                    title=" "
+                    description=" "
+                    image={{
+                        step1light1: "/assets/feature-2.png",
+                        step1light2: "/assets/feature-2.png",
+                        step2light1: "/assets/feature-3.png",
+                        step2light2: "/assets/feature-3.png",
+                        step3light: "/assets/feature-4.png",
+                        step4light: "/assets/skiper.png",
+                        // dark versions (reuse light if no dark available)
+                        step1dark1: "/assets/feature-2.jpg",
+                        step1dark2: "/assets/feature-2.png",
+                        step2dark1: "/assets/feature-3.png",
+                        step2dark2: "/assets/feature-3.png",
+                        step3dark: "/assets/feature-4.png",
+                        alt: "Why choose us preview",
+                    }}
+                />
             </div>
 
             {/* Process */}
