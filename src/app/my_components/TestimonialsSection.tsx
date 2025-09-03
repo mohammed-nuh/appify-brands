@@ -7,10 +7,10 @@ export default function TestimonialsSection() {
     { src: "/testimonials/3.png", alt: "Image 3" },
   ]
   return (
-    <section id="testimonials" className="flex flex-col items-center justify-center text-center min-h-screen">
-      <div className="">
+    <section id="testimonials" className="flex flex-col items-center justify-center text-center min-h-screen overflow-x-hidden w-full">
+      <div className="w-full max-w-full px-4">
         <h1
-        className="text-5xl font-extrabold mb-6 mt-9
+        className="text-3xl sm:text-4xl md:text-5xl font-extrabold mb-6 mt-9
         bg-gradient-to-r from-green-400 via-green-500 to-emerald-600
         bg-clip-text text-transparent animate-gradient"
       >

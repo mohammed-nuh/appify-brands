@@ -7,7 +7,7 @@ const HoverExpandComponent = () => {
   return (
     <div className="text-center">
       <h1
-        className="text-5xl font-extrabold mb-4 mt-9
+        className="text-3xl sm:text-4xl md:text-5xl font-extrabold mb-4 mt-9
   bg-gradient-to-r from-green-400 via-green-500 to-emerald-600
   bg-clip-text text-transparent animate-gradient"
       >

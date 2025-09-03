@@ -44,11 +44,11 @@ export default function HoverExpand({
 
   return (
     <div className="relative">
-      <div className="mx-auto flex w-fit gap-1 rounded-md md:gap-2">
+      <div className="mx-auto flex w-fit gap-1 sm:gap-2 rounded-md">
         {images.slice(0, maxThumbnails).map((imageUrl, i) => (
           <div
             key={`image-container-${i}`}
-            className={`group relative h-[19.5rem] overflow-hidden rounded-2xl transition-all duration-300 ${selectedIndex === i ? "w-[33rem]" : "w-6 sm:w-7 md:w-36 xl:w-54"
+            className={`group relative h-56 sm:h-72 md:h-80 lg:h-[19.5rem] overflow-hidden rounded-2xl transition-all duration-300 ${selectedIndex === i ? "w-32 sm:w-36 md:w-40 lg:w-44 xl:w-[33rem]" : "w-8 sm:w-10 md:w-12 lg:w-36 xl:w-54"
               }`}
             onMouseEnter={() => setSelectedIndex(i)}
             onMouseLeave={() => setSelectedIndex(i)}
@@ -66,7 +66,7 @@ export default function HoverExpand({
               <img
                 src={imageUrl}
                 alt={`Image ${i + 1}`}
-                className="size-full object-cover  transition-transform duration-300 "
+                className="w-full h-full object-cover transition-transform duration-300"
               />
             </motion.div>
           </div>

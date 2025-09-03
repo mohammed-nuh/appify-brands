@@ -102,11 +102,10 @@ export default function ServicesPage() {
                 variants={fadeInUp}
               >
                 <MinimalCard className="m-4 w-full max-w-md bg-gray-50 dark:bg-gray-800 shadow-sm rounded-lg overflow-hidden transform transition duration-300 hover:scale-105 hover:shadow-xl">
-                  <MinimalCardImage
-                    className="h-64 object-cover"
-                    src={card.src}
-                    alt={card.title}
-                  />
+                <MinimalCardImage
+                  src={card.src}
+                  alt={card.title}
+                />
                   <MinimalCardTitle className="text-gray-900 dark:text-white">
                     {card.title}
                   </MinimalCardTitle>
@@ -122,7 +121,7 @@ export default function ServicesPage() {
 
       {/* Pricing Table */}
       <motion.div
-        className="mt-16 scale-[1.2]"
+        className="mt-16 scale-[1] sm:scale-[1.1] md:scale-[1.2]"
         initial="hidden"
         whileInView="show"
         viewport={{ once: false, amount: 0.2 }}
@@ -165,13 +164,13 @@ export default function ServicesPage() {
 
       {/* Why Choose Us */}
       <motion.div
-        className="text-center scale-[0.6]"
+        className="text-center scale-[0.8] sm:scale-[0.9] md:scale-[0.7] my-4"
         initial="hidden"
         whileInView="show"
         viewport={{ once: false, amount: 0.2 }}
         variants={fadeInUp}
       >
-        <h2 className="text-5xl font-bold mb-8 text-gray-900 dark:text-white">
+        <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold my-8 text-gray-900 dark:text-white">
           Why Choose Us?
         </h2>
         <SkiperCard

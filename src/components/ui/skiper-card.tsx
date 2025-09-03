@@ -91,7 +91,7 @@ function FeatureCard({
           bgClass
         )}
       >
-        <div className="m-10 min-h-[700px] w-full">
+        <div className="m-10 min-h-[150px] sm:min-h-[400px] md:min-h-[500px] lg:min-h-[700px] w-full">
           <div className="flex w-4/6 flex-col gap-3">
             <h2 className="text-xl font-bold tracking-tight text-white md:text-2xl">
               {title}
@@ -135,7 +135,7 @@ export function SkiperCard({
           src={image.step4light}
           width={800}
           height={500}
-        className="pointer-events-none top-[0%] w-[90%] rounded-2xl transition-all duration-500 md:left-[35px] md:top-[2%] md:w-full"
+          className="pointer-events-none top-[0%] w-[90%] rounded-2xl transition-all duration-500 md:left-[35px] md:top-[2%] md:w-full"
           style={{ position: "absolute", userSelect: "none", maxWidth: "unset" }}
         />
       </div>

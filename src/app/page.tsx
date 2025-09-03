@@ -48,25 +48,22 @@ export default function Home() {
         viewport={{ once: false, amount: 0.2 }}
         variants={fadeInUp}
       >
-        <div className="transform origin-center scale-[1.4]">
+        <div className="transform origin-center scale-[1] sm:scale-[1.2] md:scale-[1.4]">
           <h1
-            className="flex items-center justify-center gap-3 text-4xl sm:text-5xl font-extrabold py-4
-              bg-gradient-to-r from-blue-400 via-blue-500 to-blue-700 
+            className="flex flex- items-center justify-center gap-2 sm:gap-3 text-2xl sm:text-4xl md:text-5xl font-extrabold py-4
+              bg-gradient-to-r from-blue-400 via-blue-500 to-blue-700
               bg-clip-text text-transparent animate-gradient"
           >
-            Welcome...
-            <br />
-            <span className="flex items-center gap-1">
+            Welcome to
               <img
                 src="/appify_brands_glow_logo2.png"
                 alt="AppifyBrands Logo"
-                className="w-16 h-16 sm:w-20 sm:h-20 object-contain pt-1"
+                className="w-12 h-12 sm:w-16 sm:h-16 md:w-20 md:h-20 object-contain pt-1"
               />
               AppifyBrands
-            </span>
           </h1>
 
-          <p className="text-xl text-gray-600 dark:text-gray-300 mb-2 leading-relaxed">
+          <p className="text-lg sm:text-xl text-gray-600 dark:text-gray-300 mb-2 leading-relaxed">
             We turn brands into apps.
           </p>
 
