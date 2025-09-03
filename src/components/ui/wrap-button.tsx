@@ -8,6 +8,7 @@ interface WrapButtonProps {
   children?: React.ReactNode
   href?: string
   variant?: "default" | "green"
+  onClick?: () => void
 }
 
 const WrapButton: React.FC<WrapButtonProps> = ({
@@ -15,6 +16,7 @@ const WrapButton: React.FC<WrapButtonProps> = ({
   children,
   href,
   variant = "default",
+  onClick,
 }) => {
   const isGreen = variant === "green"
 
@@ -27,6 +29,7 @@ const WrapButton: React.FC<WrapButtonProps> = ({
               "group cursor-pointer border group border-[#3B3A3A] bg-[#151515] gap-2 h-[64px] flex items-center p-[11px] rounded-full",
               className
             )}
+            onClick={onClick}
           >
             <div
               className={cn(
@@ -61,6 +64,7 @@ const WrapButton: React.FC<WrapButtonProps> = ({
             "group cursor-pointer border group border-[#3B3A3A] bg-[#151515] gap-2 h-[64px] flex items-center p-[11px] rounded-full",
             className
           )}
+          onClick={onClick}
         >
           <div
             className={cn(

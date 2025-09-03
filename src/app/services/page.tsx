@@ -58,21 +58,21 @@ export default function ServicesPage() {
     ]
 
     return (
-        <section id="services" className="p-6 py-16 bg-white dark:bg-black">
+        <section id="services" className="p-6 py-16 bg-background overflow-x-hidden">
             {/* Services Cards */}
-            <h1 className="text-3xl font-bold mx-auto text-center mb-8 text-gray-900 dark:text-white">
+            <h1 className="text-3xl font-bold mx-auto text-center mb-4 text-gray-900 dark:text-white">
                 Our Services
             </h1>
-            <p className="text-center text-gray-600 dark:text-gray-300 max-w-3xl mx-auto mb-12">
+            <p className="text-center text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
                 Affordable, high-quality websites to help you grow online. Choose the
                 perfect package for your needs.
             </p>
 
-            <div className="w-full">
+            <div className="w-full mb-12">
                 <div className="flex flex-col justify-center rounded-lg p-4">
                     <div className="flex flex-wrap items-center justify-center">
                         {cards.map((card, index) => (
-                            <MinimalCard className="m-4 w-full max-w-md bg-gray-50 dark:bg-gray-800 shadow-sm rounded-lg" key={index}>
+                            <MinimalCard className="m-4 w-full max-w-md bg-gray-50 dark:bg-gray-800 shadow-sm rounded-lg overflow-hidden" key={index}>
                                 <MinimalCardImage
                                     className="h-64 object-cover"
                                     src={card.src}
@@ -91,8 +91,8 @@ export default function ServicesPage() {
             </div>
 
             {/* Pricing Table */}
-            <div className="mt-16">
-                <h2 className="text-2xl font-bold text-center mb-6 text-gray-900 dark:text-white">
+            <div className="mt-16 scale-[1.2]">
+                <h2 className="text-2xl font-bold text-center mb-4 text-gray-900 dark:text-white">
                     Pricing Plans
                 </h2>
                 <div className="overflow-x-auto">
@@ -128,8 +128,8 @@ export default function ServicesPage() {
             </div>
 
             {/* Why Choose Us */}
-            <div className="mt-20 text-center">
-                <h2 className="text-2xl font-bold mb-8 text-gray-900 dark:text-white">
+            <div className="text-center scale-[0.6]">
+                <h2 className="text-5xl font-bold mb-8 text-gray-900 dark:text-white">
                     Why Choose Us?
                 </h2>
                 <SkiperCard
@@ -154,7 +154,7 @@ export default function ServicesPage() {
             </div>
 
             {/* Process */}
-            <div className="mt-20 text-center max-w-4xl mx-auto">
+            <div className="text-center max-w-4xl mx-auto">
                 <h2 className="text-2xl font-bold mb-6 text-gray-900 dark:text-white">Our Process</h2>
                 <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
                     {["Discovery", "Design", "Development", "Launch"].map((step, i) => (
