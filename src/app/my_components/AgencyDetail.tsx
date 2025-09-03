@@ -22,14 +22,16 @@ const AgencyDetail = ({ onPlanSelect }: { onPlanSelect: (plan: string) => void }
           <CardHeader>
             <CardTitle className="text-2xl font-bold text-primary">Basic</CardTitle>
           </CardHeader>
-          <CardContent>
-            <p className="text-muted-foreground mb-4">Perfect for small agencies or startups.</p>
-            <ul className="text-sm text-muted-foreground space-y-2 mb-6">
-              <li>✔ 3-4 Pages (Home, Services, About, Contact)</li>
-              <li>✔ Responsive Design</li>
-              <li>✔ Basic Branding</li>
-            </ul>
-            <WrapButton onClick={() => onPlanSelect("basic")} variant="green">Choose Basic</WrapButton>
+          <CardContent className="flex flex-col justify-between h-full">
+            <div>
+              <p className="text-muted-foreground mb-4">Perfect for small agencies or startups.</p>
+              <ul className="text-sm text-muted-foreground space-y-2 mb-6">
+                <li>✔ 3-4 Pages (Home, Services, About, Contact)</li>
+                <li>✔ Responsive Design</li>
+                <li>✔ Basic Branding</li>
+              </ul>
+            </div>
+            <WrapButton onClick={() => onPlanSelect("basic")} variant="green" className="border-0">Choose Basic</WrapButton>
           </CardContent>
         </Card>
 
@@ -38,15 +40,17 @@ const AgencyDetail = ({ onPlanSelect }: { onPlanSelect: (plan: string) => void }
           <CardHeader>
             <CardTitle className="text-2xl font-bold text-primary">Plus</CardTitle>
           </CardHeader>
-          <CardContent>
-            <p className="text-muted-foreground mb-4">Ideal for growing agencies with more content needs.</p>
-            <ul className="text-sm text-muted-foreground space-y-2 mb-6">
-              <li>✔ Multi-Page Website (6-8 pages)</li>
-              <li>✔ Blog/News Section</li>
-              <li>✔ Team & Portfolio Showcase</li>
-              <li>✔ Contact Form Integration</li>
-            </ul>
-            <WrapButton onClick={() => onPlanSelect("plus")} variant="green">Choose Plus</WrapButton>
+          <CardContent className="flex flex-col justify-between h-full">
+            <div>
+              <p className="text-muted-foreground mb-4">Ideal for growing agencies with more content needs.</p>
+              <ul className="text-sm text-muted-foreground space-y-2 mb-6">
+                <li>✔ Multi-Page Website (6-8 pages)</li>
+                <li>✔ Blog/News Section</li>
+                <li>✔ Team & Portfolio Showcase</li>
+                <li>✔ Contact Form Integration</li>
+              </ul>
+            </div>
+            <WrapButton onClick={() => onPlanSelect("plus")} variant="green" className="border-0">Choose Plus</WrapButton>
           </CardContent>
         </Card>
 
@@ -55,16 +59,18 @@ const AgencyDetail = ({ onPlanSelect }: { onPlanSelect: (plan: string) => void }
           <CardHeader>
             <CardTitle className="text-2xl font-bold text-primary">Pro</CardTitle>
           </CardHeader>
-          <CardContent>
-            <p className="text-muted-foreground mb-4">For agencies wanting a premium, feature-rich website.</p>
-            <ul className="text-sm text-muted-foreground space-y-2 mb-6">
-              <li>✔ Fully Custom Design</li>
-              <li>✔ CMS Integration</li>
-              <li>✔ SEO Optimization</li>
-              <li>✔ Animations & Interactions</li>
-              <li>✔ Ongoing Support</li>
-            </ul>
-            <WrapButton onClick={() => onPlanSelect("pro")} variant="green">Choose Pro</WrapButton>
+          <CardContent className="flex flex-col justify-between h-full">
+            <div>
+              <p className="text-muted-foreground mb-4">For agencies wanting a premium, feature-rich website.</p>
+              <ul className="text-sm text-muted-foreground space-y-2 mb-6">
+                <li>✔ Fully Custom Design</li>
+                <li>✔ CMS Integration</li>
+                <li>✔ SEO Optimization</li>
+                <li>✔ Animations & Interactions</li>
+                <li>✔ Ongoing Support</li>
+              </ul>
+            </div>
+            <WrapButton onClick={() => onPlanSelect("pro")} variant="green" className="border-0">Choose Pro</WrapButton>
           </CardContent>
         </Card>
       </div>
