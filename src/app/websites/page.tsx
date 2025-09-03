@@ -66,7 +66,7 @@ export default function WebsitesPage() {
 
   return (
     <section className="p-6 py-16 bg-background">
-      <h1 className="text-3xl font-bold text-center mb-8 text-black dark:text-white">
+      <h1 className="text-3xl font-bold text-center mb-8 text-black dark:text-white animate-fadeIn">
         Choose Your Website
       </h1>
 
@@ -76,11 +76,11 @@ export default function WebsitesPage() {
           <div
             key={index}
             onClick={() => setActiveIndex(index)}
-            className={`cursor-pointer border rounded-lg shadow-md p-4 w-72 transition-colors duration-300
+            className={`cursor-pointer border rounded-lg shadow-md p-4 w-72 transition-all duration-300 transform 
               ${activeIndex === index
-                ? "border-blue-600 ring-2 ring-blue-400 dark:border-blue-400 dark:ring-blue-500"
-                : "border-gray-300 dark:border-gray-700"
-              } bg-white dark:bg-gray-800 hover:shadow-lg`}
+                ? "border-blue-600 ring-2 ring-blue-400 dark:border-blue-400 dark:ring-blue-500 scale-105"
+                : "border-gray-300 dark:border-gray-700 scale-100"
+              } bg-white dark:bg-gray-800 hover:scale-105 hover:shadow-xl animate-slideUp`}
           >
             <img
               src={option.src}
@@ -95,7 +95,7 @@ export default function WebsitesPage() {
       </div>
 
       {/* Selected Component */}
-      <div className="mt-10 text-center">
+      <div className="mt-10 text-center animate-fadeIn">
         {activeIndex !== null ? (
           <div className="text-black dark:text-white">
             {options[activeIndex].component({ onPlanSelect: handlePlanSelect })}
@@ -109,7 +109,7 @@ export default function WebsitesPage() {
 
       {/* Message Box */}
       {message && (
-        <section className="mb-12 max-w-3xl mx-auto">
+        <section className="mb-12 max-w-3xl mx-auto animate-slideUp">
           <h1 ref={messageTitleRef} className="text-3xl font-bold text-center mb-8 text-black dark:text-white">
             Message Us Now!
           </h1>
@@ -119,19 +119,19 @@ export default function WebsitesPage() {
               value={customMessage}
               onChange={(e) => setCustomMessage(e.target.value)}
               placeholder="Add custom message..."
-              className="w-full p-2 mb-4 border rounded bg-white dark:bg-gray-800 text-black dark:text-white"
+              className="w-full p-2 mb-4 border rounded bg-white dark:bg-gray-800 text-black dark:text-white focus:ring-2 focus:ring-blue-500"
               rows={3}
             />
             <div className="flex justify-center gap-4">
               <button
                 onClick={handleGmail}
-                className="px-4 py-2 bg-red-700 text-white rounded hover:bg-red-700"
+                className="px-4 py-2 bg-red-600 text-white rounded hover:bg-red-700 transition-all duration-300 transform hover:scale-105"
               >
                 Send via Gmail
               </button>
               <button
                 onClick={handleTwitter}
-                className="px-4 py-2 bg-black text-white rounded hover:bg-black"
+                className="px-4 py-2 bg-black text-white rounded hover:bg-gray-800 transition-all duration-300 transform hover:scale-105"
               >
                 Share on X
               </button>
