@@ -4,7 +4,7 @@ import { Globe } from "lucide-react";
 import Image from 'next/image';
 
 export default function ServicesSection() {
-  const hover_images = ["hover_images/1.jpg", "hover_images/2.jpg", "hover_images/3.jpg"];
+  const hover_images = ["/hover_images/1.jpg", "/hover_images/2.jpg", "/hover_images/3.jpg"];
 
   return (
     <section id="services" className="flex flex-col items-center justify-center text-center min-h-screen">
@@ -28,7 +28,7 @@ export default function ServicesSection() {
             {hover_images.map((image, index) => (
               <div key={index} className="relative w-full h-48 rounded-lg overflow-hidden shadow-lg">
                 <Image
-                  src={`/${image}`}
+                  src={image}
                   alt={`Service ${index + 1}`}
                   fill
                   className="object-contain"

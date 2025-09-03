@@ -4,6 +4,7 @@ import { useState, useEffect, useRef } from "react"
 import PortfolioDetail from "../my_components/PortfolioDetail"
 import AgencyDetail from "../my_components/AgencyDetail"
 import LMSDetail from "../my_components/LMSDetail"
+import Image from 'next/image'
 
 const options = [
   {
@@ -25,14 +26,12 @@ const options = [
 
 export default function WebsitesPage() {
   const [activeIndex, setActiveIndex] = useState<number | null>(null)
-  const [selectedPlan, setSelectedPlan] = useState<string | null>(null)
   const [message, setMessage] = useState<string>("")
   const [customMessage, setCustomMessage] = useState<string>("")
   const messageBoxRef = useRef<HTMLDivElement>(null)
   const messageTitleRef = useRef<HTMLHeadingElement>(null)
 
   const handlePlanSelect = (plan: string) => {
-    setSelectedPlan(plan)
     if (activeIndex !== null) {
       const websiteType = options[activeIndex].title.toLowerCase()
       setMessage(`I want ${websiteType} of ${plan} plan. `)
@@ -40,7 +39,6 @@ export default function WebsitesPage() {
   }
 
   useEffect(() => {
-    setSelectedPlan(null)
     setMessage("")
     setCustomMessage("")
   }, [activeIndex])
@@ -82,9 +80,11 @@ export default function WebsitesPage() {
                 : "border-gray-300 dark:border-gray-700 scale-100"
               } bg-white dark:bg-gray-800 hover:scale-105 hover:shadow-xl animate-slideUp`}
           >
-            <img
-              src={option.src}
+            <Image
+              src={`/${option.src}`}
               alt={option.title}
+              width={288}
+              height={140}
               className="rounded-md h-35 w-full object-cover mb-4"
             />
             <h2 className="text-xl font-semibold text-center text-gray-900 dark:text-gray-100">

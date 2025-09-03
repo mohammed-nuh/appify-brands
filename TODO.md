@@ -6,4 +6,6 @@
 - [x] Adjust SkiperCard min-height to be responsive in src/components/ui/skiper-card.tsx (min-h-[300px] sm:min-h-[400px] md:min-h-[500px] lg:min-h-[700px])
 - [x] Fix image cutting in services cards by changing object-cover to object-scale-down in src/components/ui/minimal-card.tsx
 - [x] Implement simple image loading for mobile devices in ServicesSection.tsx instead of hover expand component
+- [x] Fix image URL paths to be valid for Next.js Image component
+- [x] Fix all linting warnings (img tags, unused variables, missing dependencies)
 - [ ] Test the changes on mobile to ensure proper scaling and no overflow

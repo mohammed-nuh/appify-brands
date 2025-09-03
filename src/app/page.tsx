@@ -9,6 +9,7 @@ import WrapButton from '@/components/ui/wrap-button';
 import { Globe } from "lucide-react";
 import Navbar from "./my_components/Navbar";
 import { motion } from "framer-motion";
+import Image from 'next/image';
 
 const scrollToSection = (id: string) => {
   const element = document.getElementById(id);
@@ -55,9 +56,11 @@ export default function Home() {
               bg-clip-text text-transparent animate-gradient"
           >
             Welcome to
-              <img
+              <Image
                 src="/appify_brands_glow_logo2.png"
                 alt="AppifyBrands Logo"
+                width={80}
+                height={80}
                 className="w-12 h-12 sm:w-16 sm:h-16 md:w-20 md:h-20 object-contain pt-1"
               />
               AppifyBrands

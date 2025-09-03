@@ -2,7 +2,7 @@ import React from 'react'
 import HoverExpand from '@/components/ui/hover-expand'
 
 const HoverExpandComponent = () => {
-  const hover_images = ["hover_images/1.jpg", "hover_images/2.jpg", "hover_images/3.jpg"]
+  const hover_images = ["/hover_images/1.jpg", "/hover_images/2.jpg", "/hover_images/3.jpg"]
 
   return (
     <div className="text-center">
