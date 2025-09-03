@@ -1,4 +1,4 @@
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Card, CardContent, CardHeader, CardTitle,  CardFooter } from "@/components/ui/card";
 import WrapButton from "@/components/ui/wrap-button";
 
 const AgencyDetail = ({ onPlanSelect }: { onPlanSelect: (plan: string) => void }) => {
@@ -29,8 +29,10 @@ const AgencyDetail = ({ onPlanSelect }: { onPlanSelect: (plan: string) => void }
               <li>✔ Responsive Design</li>
               <li>✔ Basic Branding</li>
             </ul>
-            <WrapButton onClick={() => onPlanSelect("basic")} variant="green">Choose Basic</WrapButton>
           </CardContent>
+          <CardFooter className="mt-auto">
+            <WrapButton onClick={() => onPlanSelect("basic")} variant="green" className="border-0">Choose Basic</WrapButton>
+          </CardFooter>
         </Card>
 
         {/* Plus */}
@@ -46,8 +48,10 @@ const AgencyDetail = ({ onPlanSelect }: { onPlanSelect: (plan: string) => void }
               <li>✔ Team & Portfolio Showcase</li>
               <li>✔ Contact Form Integration</li>
             </ul>
-            <WrapButton onClick={() => onPlanSelect("plus")} variant="green">Choose Plus</WrapButton>
           </CardContent>
+          <CardFooter className="mt-auto">
+            <WrapButton onClick={() => onPlanSelect("plus")} variant="green" className="border-0">Choose Plus</WrapButton>
+          </CardFooter>
         </Card>
 
         {/* Pro */}
@@ -64,8 +68,10 @@ const AgencyDetail = ({ onPlanSelect }: { onPlanSelect: (plan: string) => void }
               <li>✔ Animations & Interactions</li>
               <li>✔ Ongoing Support</li>
             </ul>
-            <WrapButton onClick={() => onPlanSelect("pro")} variant="green">Choose Pro</WrapButton>
           </CardContent>
+          <CardFooter>
+            <WrapButton onClick={() => onPlanSelect("pro")} variant="green" className="border-0">Choose Pro</WrapButton>
+          </CardFooter>
         </Card>
       </div>
     </div>

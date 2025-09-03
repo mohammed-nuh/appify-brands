@@ -1,4 +1,4 @@
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Card, CardContent, CardHeader, CardTitle, CardFooter } from "@/components/ui/card";
 import WrapButton from "@/components/ui/wrap-button";
 
 const PortfolioDetail = ({ onPlanSelect }: { onPlanSelect: (plan: string) => void }) => {
@@ -34,8 +34,10 @@ const PortfolioDetail = ({ onPlanSelect }: { onPlanSelect: (plan: string) => voi
               <li>✔ Responsive Design</li>
               <li>✔ Basic Styling</li>
             </ul>
-            <WrapButton onClick={() => onPlanSelect("basic")} variant="green">Choose Basic</WrapButton>
           </CardContent>
+          <CardFooter  className="mt-auto">
+            <WrapButton onClick={() => onPlanSelect("basic")} variant="green" className="border-0">Choose Basic</WrapButton>
+          </CardFooter>
         </Card>
 
         {/* Plus Package */}
@@ -54,8 +56,10 @@ const PortfolioDetail = ({ onPlanSelect }: { onPlanSelect: (plan: string) => voi
               <li>✔ Modern UI with Tailwind</li>
               <li>✔ Contact Form Integration</li>
             </ul>
-            <WrapButton onClick={() => onPlanSelect("plus")} variant="green">Choose Plus</WrapButton>
           </CardContent>
+          <CardFooter  className="mt-auto">
+            <WrapButton onClick={() => onPlanSelect("plus")} variant="green" className="border-0">Choose Plus</WrapButton>
+          </CardFooter>
         </Card>
 
         {/* Pro Package */}
@@ -75,8 +79,10 @@ const PortfolioDetail = ({ onPlanSelect }: { onPlanSelect: (plan: string) => voi
               <li>✔ SEO Optimization</li>
               <li>✔ Free Support & Updates</li>
             </ul>
-            <WrapButton onClick={() => onPlanSelect("pro")} variant="green">Choose Pro</WrapButton>
           </CardContent>
+          <CardFooter  className="mt-auto">
+            <WrapButton onClick={() => onPlanSelect("pro")} variant="green" className="border-0">Choose Pro</WrapButton>
+          </CardFooter>
         </Card>
       </div>
     </div>
