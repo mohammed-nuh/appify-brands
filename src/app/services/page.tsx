@@ -26,9 +26,9 @@ export default function ServicesPage() {
       src: "hover_images/2.jpg",
     },
     {
-      title: "LMS Websites",
+      title: "UI Transformation",
       description:
-        "Launch your online course platform with features like student dashboards, quizzes, and payments.",
+        "Revamp your existing website with a modern, responsive, and user-friendly design.",
       src: "hover_images/3.jpg",
     },
   ]
@@ -51,11 +51,11 @@ export default function ServicesPage() {
       ],
     },
     {
-      category: "LMS Websites",
+      category: "UI Transformation",
       plans: [
-        { name: "Normal", price: "$229.99" },
-        { name: "Animated", price: "$299.99" },
-        { name: "Dark + Light Mode", price: "$399.99" },
+        { name: "Normal", price: "$29.99 / section" },
+        { name: "Animated", price: "$39.99 / section" },
+        { name: "Dark + Light Mode", price: "$49.99  / section" },
       ],
     },
   ]
@@ -102,10 +102,10 @@ export default function ServicesPage() {
                 variants={fadeInUp}
               >
                 <MinimalCard className="m-4 w-full max-w-md bg-gray-50 dark:bg-gray-800 shadow-sm rounded-lg overflow-hidden transform transition duration-300 hover:scale-105 hover:shadow-xl">
-                <MinimalCardImage
-                  src={card.src}
-                  alt={card.title}
-                />
+                  <MinimalCardImage
+                    src={card.src}
+                    alt={card.title}
+                  />
                   <MinimalCardTitle className="text-gray-900 dark:text-white">
                     {card.title}
                   </MinimalCardTitle>
@@ -135,9 +135,9 @@ export default function ServicesPage() {
             <thead className="bg-gray-100 dark:bg-gray-700">
               <tr>
                 <th className="p-4 text-left text-gray-900 dark:text-gray-100">Service</th>
-                <th className="p-4 text-center text-gray-900 dark:text-gray-100">Normal</th>
-                <th className="p-4 text-center text-gray-900 dark:text-gray-100">Animated</th>
-                <th className="p-4 text-center text-gray-900 dark:text-gray-100">Dark + Light Mode</th>
+          <th className="p-4 text-center text-gray-900 dark:text-gray-100">Normal</th>
+          <th className="p-4 text-center text-gray-900 dark:text-gray-100">Animated</th>
+          <th className="p-4 text-center text-gray-900 dark:text-gray-100">Dark + Light Mode</th>
               </tr>
             </thead>
             <tbody className="bg-white dark:bg-gray-800">

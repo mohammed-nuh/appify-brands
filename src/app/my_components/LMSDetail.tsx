@@ -1,15 +1,15 @@
 import { Card, CardContent, CardHeader, CardTitle, CardFooter } from "@/components/ui/card";
 import WrapButton from "@/components/ui/wrap-button";
 
-const LMSDetail = ({ onPlanSelect }: { onPlanSelect: (plan: string) => void }) => {
+const UITransformationDetail = ({ onPlanSelect }: { onPlanSelect: (plan: string) => void }) => {
   return (
     <div className="mt-10 min-h-screen bg-background py-12 px-6 flex flex-col items-center">
       {/* Service Overview */}
       <div className="max-w-3xl text-center mb-12">
-        <h2 className="text-4xl font-bold mb-4">LMS Website Development</h2>
+        <h2 className="text-4xl font-bold mb-4">UI Transformation Services</h2>
         <p className="text-muted-foreground text-lg">
-          Build powerful LMS platforms for schools, colleges, and online educators. 
-          Our LMS websites are scalable, user-friendly, and packed with e-learning features.
+          Transform your user interfaces with modern design, improved usability, and responsive layouts.
+          Our UI transformation services focus on enhancing user experience and visual appeal.
         </p>
       </div>
 
@@ -21,11 +21,11 @@ const LMSDetail = ({ onPlanSelect }: { onPlanSelect: (plan: string) => void }) =
             <CardTitle className="text-2xl font-bold">Basic</CardTitle>
           </CardHeader>
           <CardContent>
-            <p className="text-muted-foreground mb-4">For small institutions or educators starting online.</p>
+            <p className="text-muted-foreground mb-4">For small projects or simple UI updates.</p>
             <ul className="text-sm space-y-2 mb-6">
-              <li>✔ Course Listing & Enrollment</li>
-              <li>✔ User Authentication</li>
-              <li>✔ Basic Dashboard</li>
+              <li>✔ Wireframing</li>
+              <li>✔ Basic UI Design</li>
+              <li>✔ Responsive Layout</li>
             </ul>
           </CardContent>
           <CardFooter  className="mt-auto">
@@ -39,12 +39,12 @@ const LMSDetail = ({ onPlanSelect }: { onPlanSelect: (plan: string) => void }) =
             <CardTitle className="text-2xl font-bold">Plus</CardTitle>
           </CardHeader>
           <CardContent>
-            <p className="text-muted-foreground mb-4">Great for institutions needing advanced LMS features.</p>
+            <p className="text-muted-foreground mb-4">For medium projects needing interactive elements.</p>
             <ul className="text-sm space-y-2 mb-6">
-              <li>✔ Course Management System</li>
-              <li>✔ Quiz & Assessment Modules</li>
-              <li>✔ Progress Tracking</li>
-              <li>✔ Instructor Dashboard</li>
+              <li>✔ Prototyping</li>
+              <li>✔ Interactive Elements</li>
+              <li>✔ User Testing</li>
+              <li>✔ Advanced Layouts</li>
             </ul>
           </CardContent>
           <CardFooter  className="mt-auto">
@@ -58,13 +58,13 @@ const LMSDetail = ({ onPlanSelect }: { onPlanSelect: (plan: string) => void }) =
             <CardTitle className="text-2xl font-bold">Pro</CardTitle>
           </CardHeader>
           <CardContent>
-            <p className="text-muted-foreground mb-4">For universities or large-scale e-learning platforms.</p>
+            <p className="text-muted-foreground mb-4">For large-scale UI overhauls and complex designs.</p>
             <ul className="text-sm space-y-2 mb-6">
-              <li>✔ Fully Custom LMS</li>
-              <li>✔ Video Lectures & Live Classes</li>
-              <li>✔ Payment Gateway Integration</li>
-              <li>✔ Gamification & Certificates</li>
-              <li>✔ Scalability for Thousands of Users</li>
+              <li>✔ Full Redesign</li>
+              <li>✔ Advanced Animations</li>
+              <li>✔ Accessibility Compliance</li>
+              <li>✔ Multi-Device Optimization</li>
+              <li>✔ Performance Optimization</li>
             </ul>
           </CardContent>
           <CardFooter >
@@ -76,4 +76,4 @@ const LMSDetail = ({ onPlanSelect }: { onPlanSelect: (plan: string) => void }) =
   );
 };
 
-export default LMSDetail;
+export default UITransformationDetail;

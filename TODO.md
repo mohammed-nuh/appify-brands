@@ -1,11 +1,7 @@
-# TODO: Make Services Page Table and Why Choose Us Responsive
+# TODO: Change LMS to UI Transformation
 
-- [x] Update src/app/services/page.tsx: Make pricing table scale responsive (scale-[1] on mobile, scale-[1.1] on md, scale-[1.2] on lg)
-- [x] Update "Why Choose Us" scale to be responsive (scale-[0.8] on mobile, scale-[0.9] on md, scale-[1] on lg)
-- [x] Make "Why Choose Us" heading responsive (text-3xl sm:text-4xl md:text-5xl)
-- [x] Adjust SkiperCard min-height to be responsive in src/components/ui/skiper-card.tsx (min-h-[300px] sm:min-h-[400px] md:min-h-[500px] lg:min-h-[700px])
-- [x] Fix image cutting in services cards by changing object-cover to object-scale-down in src/components/ui/minimal-card.tsx
-- [x] Implement simple image loading for mobile devices in ServicesSection.tsx instead of hover expand component
-- [x] Fix image URL paths to be valid for Next.js Image component
-- [x] Fix all linting warnings (img tags, unused variables, missing dependencies)
-- [ ] Test the changes on mobile to ensure proper scaling and no overflow
+## Tasks
+- [x] Update src/app/my_components/LMSDetail.tsx: Change component name to UITransformationDetail, update title, description, add prices and features to plans.
+- [x] Update src/app/websites/page.tsx: Change title to "UI Transformation", update component import and reference to UITransformationDetail.
+- [x] Update src/app/services/page.tsx: Change card title to "UI Transformation", update description, update pricing plans with suitable prices.
+- [ ] Test the changes by running the app and checking the pages.

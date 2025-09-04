@@ -21,7 +21,7 @@ export default function ServicesSection() {
   bg-gradient-to-r from-green-400 via-green-500 to-emerald-600
   bg-clip-text text-transparent animate-gradient"
           >
-            We Build
+            Services We Offer...
           </h1>
 
           <div className="grid grid-cols-1 gap-4 w-full max-w-sm mx-auto">
