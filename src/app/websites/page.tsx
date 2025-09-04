@@ -57,10 +57,20 @@ export default function WebsitesPage() {
     window.open(`mailto:appifybrands@gmail.com?subject=${encodeURIComponent(subject)}&body=${body}`)
   }
 
-  const handleTwitter = () => {
-    const text = encodeURIComponent(`${fullMessage} @AppifyBrands`)
-    window.open(`https://twitter.com/intent/tweet?text=${text}`)
-  }
+const handleTwitter = () => {
+  const text = encodeURIComponent(fullMessage);
+  window.open(
+    `https://twitter.com/appifybrands`,
+    "_blank"
+  );
+};
+
+
+const handleInstagram = () => {
+  const text = encodeURIComponent(fullMessage);
+  const user = "appifybrands"; // Your Instagram handle (no @)
+  window.open(`https://ig.me/m/${user}?text=${text}`, "_blank");
+};
 
   return (
     <section className="p-6 py-16 bg-background">
@@ -134,6 +144,12 @@ export default function WebsitesPage() {
                 className="px-4 py-2 bg-black text-white rounded hover:bg-gray-800 transition-all duration-300 transform hover:scale-105"
               >
                 Share on X
+              </button>
+              <button
+                onClick={handleInstagram}
+                className="px-4 py-2 bg-gradient-to-r from-purple-500 to-pink-500 text-white rounded hover:from-purple-600 hover:to-pink-600 transition-all duration-300 transform hover:scale-105"
+              >
+                Share on Instagram
               </button>
             </div>
           </div>
